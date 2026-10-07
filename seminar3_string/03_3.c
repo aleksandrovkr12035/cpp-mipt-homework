@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+    char a;
+    scanf("%c", &a);
+
+    if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122))
+        printf("Letter\n");
+    else if (a >= 48 && a <= 57)
+        printf("Digit\n");
+    else
+        printf("Other\n");
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    char a;
+    scanf("%c", &a);
+
+    if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
+        printf("Letter\n");
+    else if (a >= '0' && a <= '9')
+        printf("Digit\n");
+    else
+        printf("Other\n");
+}
+
+#include <stdio.h>
+#include <ctype.h>
+
+
+
+int main()
+{
+    char a;
+    scanf("%c", &a);
+
+    if (isalpha(a))
+        printf("Letter\n");
+    else if (isdigit(a))
+        printf("Digit\n");
+    else
+        printf("Other\n");
+}
